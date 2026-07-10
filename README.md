@@ -1,5 +1,8 @@
 # Insight Dashboard
 
+## Live Demo:
+https://visualization-dashboard-1gkop99fx-mirza-ikrams-projects.vercel.app/
+
 ## Overview
 
 Insight Dashboard is a full-stack web application built to visualize and analyze business insight data from the provided `jsondata.json` dataset. The dashboard presents key metrics such as **Intensity, Likelihood, Relevance, Year, Country, Region, Topics, and Sector** through interactive charts and filters, making it easier to explore trends and generate insights.
@@ -184,28 +187,6 @@ The selected filters are applied consistently across both the charts and the dat
 ## Database
 
 The application uses MongoDB to store the dataset imported from `jsondata.json`. The backend performs filtering and aggregation directly in MongoDB, ensuring efficient data retrieval and minimizing processing on the client side.
-
----
-
-## Deployment
-
-The project can be deployed using **Vercel** along with **MongoDB Atlas**.
-
-### Steps
-
-1. Push the project to a GitHub repository.
-2. Import the repository into Vercel.
-3. Add the following environment variables in the Vercel project settings:
-
-```env
-MONGODB_URI=your_mongodb_connection_string
-MONGODB_DB=insight_dashboard
-```
-
-4. Deploy the application.
-5. Ensure that your MongoDB Atlas cluster allows connections from the deployed application by configuring the appropriate Network Access settings.
-
-After deployment, the dashboard will be accessible through the Vercel-generated URL.
 
 ---
 
